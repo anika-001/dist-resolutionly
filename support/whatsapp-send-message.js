@@ -7,8 +7,8 @@ const twilio_1 = require("twilio");
 // });
 class WhatsAppHelperFunction {
     constructor() {
-        this.accountSid = process.env.TWILIO_ACCOUNT_SID || "AC2946e0aa9e2cd4d418baef458923f843"; // Your Account SID from www.twilio.com/console
-        this.authToken = process.env.TWILIO_AUTH_TOKEN || "fd50b3e67a68a8e9fe3cd970ba1abe31"; // Your Auth Token from www.twilio.com/console
+        this.accountSid = "AC2946e0aa9e2cd4d418baef458923f843"; // Your Account SID from www.twilio.com/console
+        this.authToken = "6617f3842abdf9e3f53fff06c9068849"; // Your Auth Token from www.twilio.com/console
     }
     // Function to send message to WhatsApp
     sendMessage(message, senderID) {
