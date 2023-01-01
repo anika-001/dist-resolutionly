@@ -6,7 +6,7 @@ const whatsapp_send_message_js_1 = require("../support/whatsapp-send-message.js"
 class WhatsAppUtilities {
     respond(mymessage, senderID) {
         return new Promise((resolve, reject) => {
-            memesHelper_1.memeClassExport.returnJokeIfSadElseDialogflow(mymessage).then(res => {
+            memesHelper_1.memeClassExport.returnJokeIfSadElseDialogflow(mymessage, senderID).then(res => {
                 var response = "";
                 if (res.jokeAvailable) {
                     response = res.joke;

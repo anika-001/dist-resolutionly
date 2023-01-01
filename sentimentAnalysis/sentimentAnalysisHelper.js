@@ -20,7 +20,7 @@ const sentimentAnalysisHelper = (inputText) => {
             const compound_score = result.aggregate_sentiment.compound;
             resolve(compound_score);
         }).catch(function (error) {
-            console.error(`Error Occured - ${error}`);
+            console.error(`Error5 Occured - ${error}`);
             reject(error);
         });
     });

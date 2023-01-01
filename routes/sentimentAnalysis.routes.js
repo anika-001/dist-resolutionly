@@ -19,7 +19,7 @@ sentimentAnalysisRoute.post('/analyse', (req, res) => {
             const compound_score = response_out;
             return res.status(200).json({ "compound": compound_score });
         }).catch(function (error) {
-            console.error(`Error Occured - ${error}`);
+            console.error(`Error4 Occured - ${error}`);
             return res.status(400);
         });
     }

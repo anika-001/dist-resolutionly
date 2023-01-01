@@ -24,9 +24,9 @@ meme.get('/getRandom', (req, res) => {
 // For testing of the made function
 meme.post('/returnJokeIfSadElseDialogflow', (req, res) => {
     if (req.method === 'POST') {
-        const { inputText } = req.body;
+        const { inputText, inputMobileNumber } = req.body;
         console.log(`inputText ${inputText}`);
-        memesHelper_1.memeClassExport.returnJokeIfSadElseDialogflow(inputText).then((response_out) => {
+        memesHelper_1.memeClassExport.returnJokeIfSadElseDialogflow(inputText, inputMobileNumber).then((response_out) => {
             console.log(`response_out ${JSON.stringify(response_out)}`);
             return res.status(200).json(response_out);
         }).catch((err) => {
